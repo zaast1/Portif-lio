@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1f21;
+    color: #fff;
+}
+
+header {
+    background-color: transparent; /* Fundo transparente */
+    position: fixed; /* Fixa o header no topo */
+    width: 100%; /* Largura total */
+    z-index: 10; /* Garante que o header fique acima de outros elementos */
+    padding: 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.5rem;
+    height: 0.9rem;
+    position: relative;
+}
+
+.logo::before {
+    content: "<";
+    font-size: 1.5rem;
+    color: #350066;
+    font-weight: 700;
+}
+
+.logo::after {
+    content: "/>";
+    font-size: 2rem;
+    color: #350066;
+    font-weight: 700;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    justify-content: right;
+    justify-content: right;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#home {
+    background-image: url("images/background.jpg");
+    padding-top: 80px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 64px;
+    color: #350066;
+}
+
+#home h2 {
+    text-align: left;
+}
+
+#home p {
+    text-align: left;
+    font-size: 30px;
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: #1d1f21;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #350066;
+}
+
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#about .bio, .skills {
+    width: 45%;
+}
+
+#about .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#about .skill {
+    background-color: #44475a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#about h3 {
+    text-align: left;
+    font-size: 35px;
+    color: #350066;
+}
+
+#about p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.skills h3 {
+    text-align: left;
+    color: #350066;
+}
+
+
+#contact {
+    padding: 50px;
+    background-color: #1d1f21;
+    text-align: center;
+}
+
+#contact .social-links {
+    margin-top: 20px;
+    
+}
+
+#contact .social-links a img {
+    width: 35px;
+    height: auto;
+}
+
+#contact .social-links a {
+    margin: 0 10px;
+}
+
+#contact h2 {
+    color: #350066;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1f21;
+}
